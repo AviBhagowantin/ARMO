@@ -1,0 +1,1139 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ontologygenerator.com/ARMO#"
+     xml:base="http://www.ontologygenerator.com/ARMO"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.ontologygenerator.com/ARMO"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#appliesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#appliesTo">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#DefinitionOfDone"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#assignedToSprint -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#assignedToSprint">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#TeamMember"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#Sprint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#attends -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#attends">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#TeamMember"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#AgileCeremony"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#contains">
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#defines -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#defines">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#TeamMember"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#DefinitionOfDone"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#discussedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#discussedIn">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#Requirement"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#AgileCeremony"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#executedDuring -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#executedDuring">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#TestCase"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#Sprint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#facilitates -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#facilitates">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#ScrumMaster"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#AgileCeremony"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#foundDuring -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#foundDuring">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#Defect"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#TestExecution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#fulfills -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#fulfills">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#Increment"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#has">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#System"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#hasCommitment -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#hasCommitment">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#Sprint"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#AgileCommitment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#hasDataPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#hasDataPoint">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#Increment"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#BurndownChartDataPoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#hasSprintBacklog -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#hasSprintBacklog">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#Sprint"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#SprintBacklog"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#hasSprintGoal -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#hasSprintGoal">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#Sprint"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#SprintGoal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#hasTestExecution -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#hasTestExecution">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#TestCase"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#TestExecution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#holdsRequirement -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#holdsRequirement">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#ProductBacklog"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#isDocumentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#isDocumentedBy">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#Requirement"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#FunctionalSpecification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#isFixedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#isFixedBy">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#Issue"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#TeamMember"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#owns -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#owns">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#ProductOwner"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#ProductBacklog"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#partOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#partOf">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#Requirement"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#ProductBacklog"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#performs -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#performs">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#User"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#provides -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#provides">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#User"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#providesInputTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#providesInputTo">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#BusinessStakeholder"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#ProductBacklog"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#raises -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#raises">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#DailyStandup"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#Issue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#resultsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#resultsIn">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#Sprint"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#Increment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#satisfies -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#satisfies">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#Increment"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#DefinitionOfDone"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#sprintContainsRequirement -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#sprintContainsRequirement">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#SprintBacklog"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#tracks -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#tracks">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#Version"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#Change"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#verifies -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#verifies">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#TestCase"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#worksWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologygenerator.com/ARMO#worksWith">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#BusinessStakeholder"/>
+        <rdfs:range rdf:resource="http://www.ontologygenerator.com/ARMO#TeamMember"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#agreedByDeveloper -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologygenerator.com/ARMO#agreedByDeveloper">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#AcceptanceCriterion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#agreedByProductOwner -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologygenerator.com/ARMO#agreedByProductOwner">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#AcceptanceCriterion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#agreedByTester -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologygenerator.com/ARMO#agreedByTester">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#AcceptanceCriterion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#executionDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologygenerator.com/ARMO#executionDate">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#TestExecution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#hasActualVelocity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologygenerator.com/ARMO#hasActualVelocity">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#Increment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#hasCumulativeManDays -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologygenerator.com/ARMO#hasCumulativeManDays">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#BurndownChartDataPoint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#hasCumulativeStoryPointsDelivered -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologygenerator.com/ARMO#hasCumulativeStoryPointsDelivered">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#BurndownChartDataPoint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#hasDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologygenerator.com/ARMO#hasDate">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#BurndownChartDataPoint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#hasEstimatedVelocity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologygenerator.com/ARMO#hasEstimatedVelocity">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#Increment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#hasNotes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologygenerator.com/ARMO#hasNotes">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#Requirement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#hasSprintGoal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologygenerator.com/ARMO#hasSprintGoal">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#hasTestStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologygenerator.com/ARMO#hasTestStatus">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#TestExecution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#hasTotalManDays -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologygenerator.com/ARMO#hasTotalManDays">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#Increment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#hasTotalStoryPointsInScope -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologygenerator.com/ARMO#hasTotalStoryPointsInScope">
+        <rdfs:domain rdf:resource="http://www.ontologygenerator.com/ARMO#Increment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#AcceptanceCriterion -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#AcceptanceCriterion">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#ValidationAndVerification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#Action -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#Action">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#FunctionalAndNonFunctionalRequirements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#AgileArtifact -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#AgileArtifact">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#AgilePrinciples"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#AgileCeremony -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#AgileCeremony">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#AgilePrinciples"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#AgileCommitment -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#AgileCommitment">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#AgilePrinciples"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#AgilePrinciples -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#AgilePrinciples"/>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#BurndownChartDataPoint -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#BurndownChartDataPoint">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#DecisionSupport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#BusinessStakeholder -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#BusinessStakeholder">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#StakeholdersAndCollaboration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#Change -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#Change">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#ChangeManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#ChangeManagement -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#ChangeManagement"/>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#CodeComponent -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#CodeComponent">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#RequirementsTraceability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#Communication -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#Communication">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#StakeholdersAndCollaboration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#DailyStandup -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#DailyStandup">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#AgileCeremony"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#DecisionSupport -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#DecisionSupport"/>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#Defect -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#Defect">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#Issue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#DefinitionOfDone -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#DefinitionOfDone">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#AgileCommitment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#Document -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#Document">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#KnowledgeManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#Email -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#Email">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#Communication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#Enhancement -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#Enhancement">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#Requirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#Error -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#Error">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#Issue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#Feature -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#Feature">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#Requirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#FunctionalAndNonFunctionalRequirements -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#FunctionalAndNonFunctionalRequirements"/>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#FunctionalSpecification -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#FunctionalSpecification">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#Increment -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#Increment">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#DecisionSupport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#Issue -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#Issue">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#ChangeManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#KnowledgeManagement -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#KnowledgeManagement"/>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#Notification -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#Notification">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#Communication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#ProductBacklog -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#ProductBacklog">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#AgileArtifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#ProductOwner -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#ProductOwner">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#TeamMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#Release -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#Release">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#RequirementsTraceability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#Requirement -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#Requirement">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#FunctionalAndNonFunctionalRequirements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#RequirementSource -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#RequirementSource">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#RequirementsTraceability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#RequirementsTraceability -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#RequirementsTraceability"/>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#Retrospective -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#Retrospective">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#AgileCeremony"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#ScrumMaster -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#ScrumMaster">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#TeamMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#Sprint -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#Sprint">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#AgileCeremony"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#SprintBacklog -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#SprintBacklog">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#AgileArtifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#SprintGoal -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#SprintGoal">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#AgileCommitment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#SprintPlanning -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#SprintPlanning">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#AgileCeremony"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#StakeholdersAndCollaboration -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#StakeholdersAndCollaboration"/>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#Story -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#Story">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#Requirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#System -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#System">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#FunctionalAndNonFunctionalRequirements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#TeamMember -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#TeamMember">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#StakeholdersAndCollaboration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#TestCase -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#TestCase">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#ValidationAndVerification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#TestExecution -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#TestExecution">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#ValidationAndVerification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#UseCase -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#UseCase">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#Requirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#User -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#User">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#StakeholdersAndCollaboration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#ValidationAndVerification -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#ValidationAndVerification"/>
+    
+
+
+    <!-- http://www.ontologygenerator.com/ARMO#Version -->
+
+    <owl:Class rdf:about="http://www.ontologygenerator.com/ARMO#Version">
+        <rdfs:subClassOf rdf:resource="http://www.ontologygenerator.com/ARMO#ChangeManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.ontologygenerator.com/ARMO#tc">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologygenerator.com/ARMO#te">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologygenerator.com/ARMO#d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologygenerator.com/ARMO#tm">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologygenerator.com/ARMO#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologygenerator.com/ARMO#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologygenerator.com/ARMO#sb">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologygenerator.com/ARMO#i">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologygenerator.com/ARMO#dod">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Assigning Defects to Team Members in a Sprint</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.ontologygenerator.com/ARMO#hasTestExecution"/>
+                        <swrl:argument1 rdf:resource="http://www.ontologygenerator.com/ARMO#tc"/>
+                        <swrl:argument2 rdf:resource="http://www.ontologygenerator.com/ARMO#te"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.ontologygenerator.com/ARMO#Defect"/>
+                                <swrl:argument1 rdf:resource="http://www.ontologygenerator.com/ARMO#d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.ontologygenerator.com/ARMO#assignedToSprint"/>
+                                        <swrl:argument1 rdf:resource="http://www.ontologygenerator.com/ARMO#tm"/>
+                                        <swrl:argument2 rdf:resource="http://www.ontologygenerator.com/ARMO#s"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.ontologygenerator.com/ARMO#verifies"/>
+                                                <swrl:argument1 rdf:resource="http://www.ontologygenerator.com/ARMO#tc"/>
+                                                <swrl:argument2 rdf:resource="http://www.ontologygenerator.com/ARMO#r"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.ontologygenerator.com/ARMO#sprintContainsRequirement"/>
+                                                        <swrl:argument1 rdf:resource="http://www.ontologygenerator.com/ARMO#sb"/>
+                                                        <swrl:argument2 rdf:resource="http://www.ontologygenerator.com/ARMO#r"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.ontologygenerator.com/ARMO#hasSprintBacklog"/>
+                                                                <swrl:argument1 rdf:resource="http://www.ontologygenerator.com/ARMO#s"/>
+                                                                <swrl:argument2 rdf:resource="http://www.ontologygenerator.com/ARMO#sb"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.ontologygenerator.com/ARMO#foundDuring"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.ontologygenerator.com/ARMO#d"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.ontologygenerator.com/ARMO#te"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.ontologygenerator.com/ARMO#isFixedBy"/>
+                        <swrl:argument1 rdf:resource="http://www.ontologygenerator.com/ARMO#d"/>
+                        <swrl:argument2 rdf:resource="http://www.ontologygenerator.com/ARMO#tm"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Inferring Requirement Fulfillment from the Definition of Done</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.ontologygenerator.com/ARMO#Increment"/>
+                        <swrl:argument1 rdf:resource="http://www.ontologygenerator.com/ARMO#i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ontologygenerator.com/ARMO#satisfies"/>
+                                <swrl:argument1 rdf:resource="http://www.ontologygenerator.com/ARMO#i"/>
+                                <swrl:argument2 rdf:resource="http://www.ontologygenerator.com/ARMO#dod"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.ontologygenerator.com/ARMO#DefinitionOfDone"/>
+                                        <swrl:argument1 rdf:resource="http://www.ontologygenerator.com/ARMO#dod"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.ontologygenerator.com/ARMO#appliesTo"/>
+                                                <swrl:argument1 rdf:resource="http://www.ontologygenerator.com/ARMO#dod"/>
+                                                <swrl:argument2 rdf:resource="http://www.ontologygenerator.com/ARMO#r"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.ontologygenerator.com/ARMO#fulfills"/>
+                        <swrl:argument1 rdf:resource="http://www.ontologygenerator.com/ARMO#i"/>
+                        <swrl:argument2 rdf:resource="http://www.ontologygenerator.com/ARMO#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Inferring Requirement Fulfillment from Sprint Completion</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.ontologygenerator.com/ARMO#Sprint"/>
+                        <swrl:argument1 rdf:resource="http://www.ontologygenerator.com/ARMO#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ontologygenerator.com/ARMO#hasSprintBacklog"/>
+                                <swrl:argument1 rdf:resource="http://www.ontologygenerator.com/ARMO#s"/>
+                                <swrl:argument2 rdf:resource="http://www.ontologygenerator.com/ARMO#sb"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.ontologygenerator.com/ARMO#sprintContainsRequirement"/>
+                                        <swrl:argument1 rdf:resource="http://www.ontologygenerator.com/ARMO#sb"/>
+                                        <swrl:argument2 rdf:resource="http://www.ontologygenerator.com/ARMO#r"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.ontologygenerator.com/ARMO#resultsIn"/>
+                                                <swrl:argument1 rdf:resource="http://www.ontologygenerator.com/ARMO#s"/>
+                                                <swrl:argument2 rdf:resource="http://www.ontologygenerator.com/ARMO#i"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.ontologygenerator.com/ARMO#fulfills"/>
+                        <swrl:argument1 rdf:resource="http://www.ontologygenerator.com/ARMO#i"/>
+                        <swrl:argument2 rdf:resource="http://www.ontologygenerator.com/ARMO#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
