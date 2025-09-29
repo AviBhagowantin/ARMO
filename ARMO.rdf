@@ -8,11 +8,23 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:vann="http://purl.org/vocab/vann/">
     <owl:Ontology rdf:about="https://github.com/AviBhagowantin/ARMO">
-        <owl:versionIRI rdf:resource="https://github.com/AviBhagowantin/ARMO/tree/1.0.0"/>
-		<owl:versionInfo>1.0.0</owl:versionInfo>
-    </owl:Ontology>
+    <owl:versionIRI rdf:resource="https://github.com/AviBhagowantin/ARMO/tree/1.0.0"/>
+    <dcterms:title xml:lang="en">Agile Requirements Management Ontology (ARMO)</dcterms:title>
+    <dcterms:description xml:lang="en">An ontology for modeling concepts and relationships in agile requirements management.</dcterms:description>
+    <dcterms:creator xml:lang="en">Avi Bhagowantin</dcterms:creator>
+    <dcterms:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
+    <vann:preferredNamespaceUri>https://github.com/AviBhagowantin/ARMO#</vann:preferredNamespaceUri>
+	<vann:preferredNamespacePrefix>armo</vann:preferredNamespacePrefix>
+	<owl:versionInfo>1.0.0</owl:versionInfo>
+    <dcterms:created>2025-09-29</dcterms:created>
+    <dcterms:bibliographicCitation>Bhagowantin, A. (2025). Agile Requirements Management Ontology (ARMO). Retrieved from https://github.com/AviBhagowantin/ARMO</dcterms:bibliographicCitation>
+	<dcterms:issued>2025-09-29</dcterms:issued>
+    <dcterms:publisher xml:lang="en">University of Mauritius</dcterms:publisher>
+</owl:Ontology>
     
 
 
