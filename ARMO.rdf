@@ -11,6 +11,7 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
     <owl:Ontology rdf:about="https://github.com/AviBhagowantin/ARMO">
         <owl:versionIRI rdf:resource="https://github.com/AviBhagowantin/ARMO/tree/1.0.0"/>
+		<owl:versionInfo>1.0.0</owl:versionInfo>
     </owl:Ontology>
     
 
