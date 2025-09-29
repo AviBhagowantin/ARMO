@@ -24,6 +24,7 @@
     <dcterms:bibliographicCitation>Bhagowantin, A. (2025). Agile Requirements Management Ontology (ARMO). Retrieved from https://github.com/AviBhagowantin/ARMO</dcterms:bibliographicCitation>
 	<dcterms:issued>2025-09-29</dcterms:issued>
     <dcterms:publisher xml:lang="en">University of Mauritius</dcterms:publisher>
+	<dcterms:identifier>https://zenodo.org/records/17225722</dcterms:identifier>
 </owl:Ontology>
     
 
