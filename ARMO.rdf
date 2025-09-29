@@ -11,8 +11,8 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
     <owl:Ontology rdf:about="https://github.com/AviBhagowantin/ARMO">
         <owl:versionIRI rdf:resource="https://github.com/AviBhagowantin/ARMO/1.0"/>
-		<dct:title xml:lang="en">Agile Requirements Management Ontology (ARMO)</dc:title>
-        <dct:description xml:lang="en">An ontology for managing requirements in an agile software development environment.</dc:description>
+		<dct:title xml:lang="en">Agile Requirements Management Ontology (ARMO)</dct:title>
+        <dct:description xml:lang="en">An ontology for managing requirements in an agile software development environment.</dct:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dct:creator>
             <foaf:Person>
