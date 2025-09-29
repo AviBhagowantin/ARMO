@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://zenodo.org/records/17225722#"
-     xml:base="https://zenodo.org/records/17225722"
+<rdf:RDF xmlns="https://doi.org/10.5281/zenodo.17225722#"
+     xml:base="https://doi.org/10.5281/zenodo.17225722"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -12,7 +12,8 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:vann="http://purl.org/vocab/vann/"
 	 xmlns:dcat="http://www.w3.org/ns/dcat#">
-    <owl:Ontology rdf:about="https://zenodo.org/records/17225722">
+	 
+    <owl:Ontology rdf:about="https://doi.org/10.5281/zenodo.17225722">
     <owl:versionIRI rdf:resource="https://github.com/AviBhagowantin/ARMO/releases/tag/1.0.0"/>
     <dcterms:title xml:lang="en">Agile Requirements Management Ontology (ARMO)</dcterms:title>
     <dcterms:description xml:lang="en">An ontology for modeling concepts and relationships in agile requirements management.</dcterms:description>
